@@ -20,20 +20,16 @@
 
 function narcissistic(value) {
 
-
     let dim = value.toString().length
     let valueString = value.toString()
     let soma = 0
    
-
     for(let i=0; i<dim; i++){
         soma += Number(valueString[i]) ** dim
     }
     if(value === soma){return true}else{return false}
 
   }
-  
 
- // narcissistic(1652)
 console.log(narcissistic(1652))
 
